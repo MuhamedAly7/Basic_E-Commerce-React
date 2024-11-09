@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Product(props)
 {
@@ -10,7 +11,7 @@ function Product(props)
                 <h5 className="card-title">{props.title}</h5>
                 <p className="card-text">{props.description}</p>
                 <p className="card-text"><strong>Price: </strong>{props.price}$</p>
-                <button href="#" className="btn btn-primary">Go somewhere</button>
+                {props.showButton && (<Link to={`product/${props.id}`} className="btn btn-primary">Details</Link>)}
               </div>
             </div>
         </>
