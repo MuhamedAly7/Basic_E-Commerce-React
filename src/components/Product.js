@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Cart.css"
 
 function Product(props)
 {
     return (
         <>
-            <div className="card">
+            <div className="card fixed-card">
               <img src={props.image} className="card-img-top" alt="..."/>
               <div className="card-body">
                 <h5 className="card-title">{props.title}</h5>

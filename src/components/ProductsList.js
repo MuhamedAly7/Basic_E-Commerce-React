@@ -34,13 +34,13 @@ function ProductsList()
         <>
             <h2 className="text-center p-3">Our Products</h2>
             <div className="container">
-                <button className="btn btn-info" onClick={() => getProducts()}>All Prodcuts</button>
+                <button className="btn btn-info mx-1" onClick={() => getProducts()}>All</button>
                 {
                     categories.map((category) => {
                         return (
                             <button key={category} onClick={() => {
                                 getProductsInCategory(category);
-                            }} className="btn btn-info">{category}</button>
+                            }} className="btn btn-info mx-1">{category}</button>
                         );
                     })
                 }
